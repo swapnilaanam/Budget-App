@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Budget.css">
+        <script src="https://kit.fontawesome.com/4d319b78cc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="app-container">
+            <h5>BUDGET APP</h5>
+            <div class="feedback"></div>
+            <div id="budget-app">
+                <div id="input-budget">
+                    <p>Please Enter Your Budget</p>
+                    <input class="field" type="number">
+                    <input type="submit" class="input-button" value="Calculate">
+                </div>
+                <div id="total-budget">
+                    <div class="indi-budget">
+                        <h5>Budget</h5>
+                        <span class="icon"><i class="fas fa-money-bill-alt"></i></span>
+                        <h4 style="color: green;">$ <span class="budget-total">0</span></h4>
+                    </div>
+                    <div class="indi-budget">
+                        <h5>Expenses</h5>
+                        <span class="icon"><i class="far fa-credit-card"></i></span>
+                        <h4 class="total-expense" style="color: red;">$ 0</h4>
+                    </div>
+                    <div class="indi-budget">
+                        <h5>Balance</h5>
+                        <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                        <h4 class="total-balance">$ 0</h4>
+                    </div>
+                </div>
+                <div id="expense-budget">
+                    <form action="">
+                        <label>Please Enter Your Expense</label>
+                        <input class="expense-field" type="text">
+                        <label>Please Enter Expense Amount</label>
+                        <input class="expense-field" type="number">
+                        <input type="submit" class="expense-button" value="Add Expense">
+                    </form>
+                </div>
+                <div id="expense-list">
+                    <div class="list-header">
+                        <p>Expense Title</p>
+                        <p>Expense Value</p>
+                    </div>
+                    <div class="list-main">  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Budget.js" type="text/javascript"></script>
+    </body>
+</html>

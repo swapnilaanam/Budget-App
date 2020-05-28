@@ -1,0 +1,209 @@
+html
+{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+*, ::before, ::after
+{
+    box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,p
+{
+    margin: 0;
+}
+
+body
+{
+    margin: 0;
+    background: mistyrose;
+}
+
+#app-container
+{
+    width: 96%;
+    padding: 2rem 2%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#app-container > h5
+{
+    padding: 1rem 0;
+}
+
+.feedback
+{
+    display: none;
+    place-items: center;
+    text-align: center;
+    background: mediumseagreen;
+    color: black;
+    font-size: 1.3em;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.feedback-shown
+{
+    display: grid;
+}
+
+#budget-app
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 4rem 2rem;
+}
+
+#input-budget
+{
+    border: 3px solid green;
+    border-radius: 5px;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    padding: 0.5rem 0;
+}
+
+#input-budget > *
+{
+    margin: 0.5rem 0;
+    margin-left: 1rem;
+}
+
+.field
+{
+    width: 80%;
+    padding: 0.2rem;
+    border: 0;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.field:focus
+{
+    box-shadow:0 0 10px cornflowerblue;
+}
+
+.input-button
+{
+    border: 2px solid green;
+    background: none;
+    color: green;
+    font-size: 0.9em;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#total-budget
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.indi-budget
+{
+    display: grid;
+    justify-items: center;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+}
+
+.icon
+{
+    font-size: 2em;
+    color: cornflowerblue;
+}
+
+#expense-budget
+{
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+#expense-budget > form
+{
+    width: 96%;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    display: grid;
+}
+
+.expense-field
+{
+    width: 80%;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.expense-field:focus
+{
+    box-shadow: 0 0 10px cornflowerblue;
+}
+
+.expense-button
+{
+    justify-self: start;
+    padding: 0.5rem;
+    border: 2px solid red;
+    background: none;
+    color: red;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#expense-list
+{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: flex-start;
+    grid-template-rows: auto auto;
+    align-content: flex-start;
+}
+
+.list-header
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: flex-start;
+    gap: 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.list-main
+{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.expense
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    color: crimson;
+    text-transform: capitalize;
+}
+
+.item > *
+{
+    color: cornflowerblue;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
