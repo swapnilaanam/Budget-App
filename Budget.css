@@ -207,3 +207,12 @@ body
     padding: 0 0.5rem;
     cursor: pointer;
 }
+
+@media only screen and (max-width400px)
+{
+    #budget-app
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
