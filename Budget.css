@@ -37,6 +37,7 @@ body
 .feedback
 {
     display: none;
+    width: 100%;
     place-items: center;
     text-align: center;
     background: mediumseagreen;
@@ -208,7 +209,7 @@ body
     cursor: pointer;
 }
 
-@media only screen and (max-width400px)
+@media only screen and (max-width:400px)
 {
     #budget-app
     {
